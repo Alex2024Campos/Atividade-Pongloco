@@ -1,0 +1,21 @@
+/*
+    zerando todas as margins do documento
+    zerando todos os espaçamentos do documento
+    */
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(39, 12, 160);
+}
+
+
+#canvas{
+    position:absolute; /* Deixa o bloco ai fixo*/
+    background-color:rgb(86, 204, 155);
+    margin:auto; /*propriedades para alinha,ento centralizado*/
+    top:0;  /*propriedades para alinha,ento centralizado*/
+    bottom:0;  /*propriedades para alinha,ento centralizado*/
+    left:0;  /*propriedades para alinha,ento centralizado*/
+    right:0;  /*propriedades para alinha,ento centralizado*/
+}
