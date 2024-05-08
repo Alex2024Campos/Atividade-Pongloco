@@ -1,5 +1,5 @@
 # Atividade-Pongloco
--> >[!Important]
+>[!Important]
 >- Criação de um jogo de Ping Pong utilizando de HTML, CSS e JS. 
 >- Dupla: Alex e Christian.
 >- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
