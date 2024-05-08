@@ -17,3 +17,6 @@ Criação de um jogo de Ping Pong.
    ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/9afa41e5-cf64-4b39-9393-b352449d511d)
    ### Foto do VisualStudio 
    ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/4d2a91ce-7dac-490f-ab06-6a6e7536343b)
+
+   ## Linha de Código da Movimentação do Objeto:
+   ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/591c59cb-9710-43e4-bc22-65334a3594f8)
