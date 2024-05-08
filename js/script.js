@@ -22,14 +22,15 @@ let player2 =  {
     py:260,
     tx:30,
     ty:200,
-}
+}   
 
 
 let bolinha = {
-    px:620,
-    py:345,
-    tx:30,
-    ty:30,
+    px:620, // Posição da bolinha no eixo X
+    py:345, // Posição da bolinha no eixo Y
+    tx:30, // Largura do objeto
+    ty:30, // Altura do objeto
+    dir:8, // é um novo atributo que atribue a direção que é 8 pixels no caso do prof. Andre Mauricio.
 }
 
 
@@ -39,8 +40,8 @@ quadro.fillRect(1280/2-20,720/2-15,30,30) //Esses fill rects servem para fazer o
 quadro.font = '30px arial'
 let pts1 = 0
 let pts2 = 0
-let score1 = quadro.fillText(`Pontos 1: ${pts1}`,280,50)
-let score2 = quadro.fillText(`Pontos 2: ${pts2}`,850,50)
+//let score1 = quadro.fillText(`Pontos 1: ${pts1}`,280,50)
+//let score2 = quadro.fillText(`Pontos 2: ${pts2}`,850,50)
 //contatenar= +
 
 function draw(){
@@ -51,6 +52,24 @@ function draw(){
     quadro.fillText(`Pontos: ${pts2}`,890,50)
 }
 
-draw(){
 
+
+document.addEventListener('keydown', function () {player1.py +=10}) //é uma função sem nome (não declarada) que já executa direto os comandos sem a necessidade de tanto espaço ou sincera complexidade.
+
+function moverBolinha(){
+    bolinha.px += bolinha.dir //pegando o objeto bolinha para movimenta-lo 8px.
+    if (bolinha.px > 1140){
+        bolinha.dir *= -1 //Multiplicando para que ela vá ao contrário
+    }
+    else if(bolinha.px < 90){
+        bolinha.dir *=-1
+    }
 }
+
+function main(){
+    quadro.clearRect (0,0,1280,720) //limpar o quadro. Irá limpar do 0 do eixo X e y. Apagando todos os elementos que estão no canva (cleaRect) para na sequência redesenha-los, 0 posição inicial e 1280 tamanho do canva, 0 posição inicial do eixo y e 720 altura do canva.
+    draw() 
+    moverBolinha() //Para que serve os parenteses?
+}
+
+setInterval(main, 10) //passar argumentos. Executará a função main em um determinado intervalo de tempo.
