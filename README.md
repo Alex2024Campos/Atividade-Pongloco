@@ -1,12 +1,12 @@
 # Atividade-Pongloco
-> [!Important]
-> Criação de um jogo de Ping Pong utilizando de HTML, CSS e JS. 
-> Dupla: Alex e Christian.
-> Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
-> Aula: Desenvolvimento de Jogos para Web (DJW).
-> Aula: 08/05/2024.
-> Escola: Etec. Basilides de Godoy.
-> Abaixo estão alguns comandos utilizados nesse projeto e as suas explicações:
+>- [!Important]
+>- Criação de um jogo de Ping Pong utilizando de HTML, CSS e JS. 
+>- Dupla: Alex e Christian.
+>- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
+>- Aula: Desenvolvimento de Jogos para Web (DJW).
+>- Aula: 08/05/2024.
+>- Escola: Etec. Basilides de Godoy.
+>- Abaixo estão alguns comandos utilizados nesse projeto e as suas explicações:
   ## setInterval:
  - setInterval: Serve para executar uma função ou instrução várias vezes em determinado intervalo de tempo.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/197b0582-904a-4af6-a929-ba233d2d8579)
