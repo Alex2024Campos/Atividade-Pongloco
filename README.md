@@ -30,3 +30,7 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________ 
 
+
+## function moverJogador1():
+- Nessa function iremos determinar a qual velocidade o jogador1 (barra da esquerda) se move no eixo de posição Y. Ela pega o addEventListener (Keydown = qualquer tecla) e leva o resultado para a function moverJogador e assim fará a movimentação do objeto. Ela só será executada quando o jogador pressionar uma tecla, em resumo. Para deixar mais fácil de entender, "até criancinha de rua faz", como Marco diria: temos uma Function que não serve para nada (moverJogador1) e a "colocamos" em um evento de clique, o qual irá fazer o que estiver na function caso o clique seja feito pelo usuário.
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/d1c9da38-ff22-4a2a-9161-3b16cb441061)
