@@ -7,9 +7,12 @@
 >- Aula: 08/05/2024.
 >- Escola: Etec. Basilides de Godoy.
 >- Abaixo estão alguns comandos utilizados nesse projeto e as suas explicações:
+>-  Em caso de bug devido a puxar o repositório em outro computador, faça: git pull origin main e depois só dê o push para ligar o git com o pc requisitado;
   ## setInterval:
  - setInterval: Serve para executar uma função ou instrução várias vezes em determinado intervalo de tempo.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/197b0582-904a-4af6-a929-ba233d2d8579)
+ 
+
 
 
 _________________________________________________________________________________________________________________________________ 
