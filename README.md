@@ -1,10 +1,10 @@
 # Atividade-Pongloco
-Criação de um jogo de Ping Pong utilizando de HTML, CSS e JS. 
-Dupla: Alex e Christian.
-Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
-Aula: Desenvolvimento de Jogos para Web (DJW).
-Aula: 08/05/2024.
-Escola: Etec. Basilides de Godoy.
+- Criação de um jogo de Ping Pong utilizando de HTML, CSS e JS. 
+- Dupla: Alex e Christian.
+- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
+- Aula: Desenvolvimento de Jogos para Web (DJW).
+- Aula: 08/05/2024.
+- Escola: Etec. Basilides de Godoy.
 
 > [!Important]
 > Abaixo estão alguns comandos utilizados nesse projeto e as suas explicações:
