@@ -45,3 +45,11 @@ ________________________________________________________________________________
 ## function declaration:
 - Se resume em fazer uma function sem nome, a qual ocupa menos linhas de código e é até mais prático. Em outras palavras, é uma forma direta de fazer um comando ser feito após determinada ação ou outro movimento. Utilize a imagem abaixo de exemplo, é a 1° linha de código.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/87319ab3-8da1-4a60-a2b4-2e8339f49e9b)
+
+## Tecla de movimento:
+- Escolhendo tecla que movimentará a barra pelo console do navegador.
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/09c56282-f585-48c0-9ed5-6db9dfc1e845)
+
+- A função anônima fará com que ao clicar nessas teclas em específico, a barra se movimente para cima ou para baixo, junto da função movimentarJogador1, que depois será chamada na função main.
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/e10464c7-2e83-4f79-a0fd-e0f315ec7ac2)
+
