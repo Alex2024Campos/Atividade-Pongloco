@@ -14,6 +14,7 @@ let quadro = canvasPong.getContext('2d') //Preparando o canvas para receber dese
     py:260,
     tx:30,
     ty:200,
+    dir:0,
 }
 
 
@@ -53,8 +54,34 @@ function draw(){
 }
 
 
+document.addEventListener('keydown', function (e){
+    if(e.keyCode === 83){
+        player1.dir = -8
+    }
+    else if(e.keyCode === 87){
+        player1.dir = 8
+    }
+})
 
-document.addEventListener('keydown', function () {player1.py +=10}) //é uma função sem nome (não declarada) que já executa direto os comandos sem a necessidade de tanto espaço ou sincera complexidade.
+document.addEventListener('keyup', function (e){
+    if(e.keyCode === 83){
+        player1.dir = 0
+    }
+    else if(e.keyCode === 87){
+        player1.dir = 0
+    }
+    
+}) //chamando função ao clicar.
+
+function moverJogador1(){
+    if(player1.py < 0){
+        player1.py = 0
+    }
+    else if(player1.py > 520){
+        player1.py = 520
+    }
+    player1.py += player1.dir
+}
 
 function moverBolinha(){
     bolinha.px += bolinha.dir //pegando o objeto bolinha para movimenta-lo 8px.
@@ -70,6 +97,7 @@ function main(){
     quadro.clearRect (0,0,1280,720) //limpar o quadro. Irá limpar do 0 do eixo X e y. Apagando todos os elementos que estão no canva (cleaRect) para na sequência redesenha-los, 0 posição inicial e 1280 tamanho do canva, 0 posição inicial do eixo y e 720 altura do canva.
     draw() 
     moverBolinha() //Para que serve os parenteses?
+    moverJogador1()
 }
 
 setInterval(main, 10) //passar argumentos. Executará a função main em um determinado intervalo de tempo.
