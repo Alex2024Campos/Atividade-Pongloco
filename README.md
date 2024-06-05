@@ -63,3 +63,7 @@ ________________________________________________________________________________
 ## Function moverBolinha():
 - Na function para movimentar a bola do jogo, fizemos algumas modificações no "else if", adicionando uma linha de código que estabelece um limite de altura para a bolinha com base na barra. Em outras palavras, se ultrapassar a altura ou ser igual a ela, a bolinha fará as ações abaixo.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/82698f69-b923-423f-9f0b-f5664cd25c1a)
+
+
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/7cafd1ce-60a4-4a65-9e51-6548e81ee145)
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/cbe1db42-726d-49f7-891d-34ad12fefa89)
