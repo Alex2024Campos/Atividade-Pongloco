@@ -23,6 +23,7 @@ let player2 =  {
     py:260,
     tx:30,
     ty:200,
+    dir:0,
 }   
 
 
@@ -54,24 +55,11 @@ function draw(){
 }
 
 
-document.addEventListener('keydown', function (e){
-    if(e.keyCode === 83){ //o 83 é o valor numérico da respectiva tecla, a qual foi visualizada pelo console.
-        player1.dir = -8
-    }
-    else if(e.keyCode === 87){
-        player1.dir = 8
-    }
-})
 
-document.addEventListener('keyup', function (e){
-    if(e.keyCode === 83){ //linha, pelo oque foi dito pelo Christiano, aparentemente foi feito no console e fica assim no código visualmente. Meu pai do céu.
-        player1.dir = 0
-    }
-    else if(e.keyCode === 87){
-        player1.dir = 0
-    }
-    
-}) //chamando função ao clicar.
+
+
+
+
 
 function moverJogador1(){
     if(player1.py < 0){
@@ -83,13 +71,92 @@ function moverJogador1(){
     player1.py += player1.dir
 }
 
+document.addEventListener('keydown', function (e){
+    if(e.keyCode === 87){ //o 83 é o valor numérico da respectiva tecla, a qual foi visualizada pelo console.
+        player1.dir = -8
+    }
+    else if(e.keyCode === 83){
+        player1.dir = 8
+    }
+})
+
+document.addEventListener('keyup', function (e){
+    if(e.keyCode === 87){ //linha, pelo oque foi dito pelo Christiano, aparentemente foi feito no console e fica assim no código visualmente. Meu pai do céu.
+        player1.dir = 0
+    }
+    else if(e.keyCode === 83){
+        player1.dir = 0
+    }
+    
+}) //chamando função ao clicar.
+
+
+
+
+
+
+
+
+
+function moverJogador2(){
+    if(player2.py < 0){
+        player2.py = 0
+    }
+    else if(player2.py > 520){
+        player2.py = 520
+    }
+    player2.py += player2.dir
+}
+
+document.addEventListener('keydown', function (e){
+    if(e.keyCode === 38){
+        player2.dir = -8
+    }
+    else if(e.keyCode === 40)
+        player2.dir = 8
+})
+
+
+document.addEventListener('keyup', function (e){
+    if(e.keyCode === 38){
+        player2.dir = 0
+    }
+    else if(e.keyCode === 40)
+        player2.dir = 0
+})
+
+
+
+
+
+
+
+
+
+
 function moverBolinha(){
     bolinha.px += bolinha.dir //pegando o objeto bolinha para movimenta-lo 8px. 
-    if (bolinha.px > 1140){
+}
+
+function colisaoBolinha(){
+    if (bolinha.py + bolinha.ty >= player2.py && bolinha.py <= player2.py + player2.ty && bolinha.px >= player2.px - player2.tx){
         bolinha.dir *= -1 //Multiplicando para que ela vá ao contrário
     }
-    else if(bolinha.py + bolinha.ty >= player1.ty && bolinha.py <= player1.py + player1.ty && bolinha.px <= player1.px + player1.tx){ //se a posição da bola for maior ou igual que a do objeto lá (barrinha), fará os bgl *E*. 
+    else if(bolinha.py + bolinha.ty >= player1.py && bolinha.py <= player1.py + player1.ty && bolinha.px <= player1.px + player1.tx){ //se a posição da bola for maior ou igual que a do objeto lá (barrinha), fará os bgl *E*. 
         bolinha.dir *=-1 //+ player1.tx
+    }
+}
+
+function pontos(){
+    if (bolinha.px < -100){
+        bolinha.px = 620
+        bolinha.py = 345
+        bolinha.dir *= -1
+}
+    else if(bolinha.px > 1380){
+        bolinha.px = 620
+        bolinha.py = 345
+        bolinha.dir *= -1
     }
 }
 
@@ -97,10 +164,14 @@ function main(){
     quadro.clearRect (0,0,1280,720) //limpar o quadro. Irá limpar do 0 do eixo X e y. Apagando todos os elementos que estão no canva (cleaRect) para na sequência redesenha-los, 0 posição inicial e 1280 tamanho do canva, 0 posição inicial do eixo y e 720 altura do canva.
     draw() 
     moverBolinha() //Para que serve os parenteses?
+    colisaoBolinha()
     moverJogador1()
+    moverJogador2()
+    pontos()
 }
 
 setInterval(main, 10) //passar argumentos. Executará a função main em um determinado intervalo de tempo.
 
 
 // bolinha.ty = tamanho da bola.
+//quero chorar
