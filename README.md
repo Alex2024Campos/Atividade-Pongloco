@@ -13,8 +13,6 @@
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/197b0582-904a-4af6-a929-ba233d2d8579)
  
 
-
-
 _________________________________________________________________________________________________________________________________ 
 
 
@@ -46,10 +44,22 @@ ________________________________________________________________________________
 - Se resume em fazer uma function sem nome, a qual ocupa menos linhas de código e é até mais prático. Em outras palavras, é uma forma direta de fazer um comando ser feito após determinada ação ou outro movimento. Utilize a imagem abaixo de exemplo, é a 1° linha de código.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/160960774/87319ab3-8da1-4a60-a2b4-2e8339f49e9b)
 
+
+## Function Anonymous (anônima):
+ - A função anônima fará com que ao clicar nessas teclas em específico, a barra se movimente para cima ou para baixo, junto da função movimentarJogador1, que depois será chamada na função main.
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/e10464c7-2e83-4f79-a0fd-e0f315ec7ac2)
+
+
+_________________________________________________________________________________________________________________________________ 
+
+
 ## Tecla de movimento:
 - Escolhendo tecla que movimentará a barra pelo console do navegador.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/09c56282-f585-48c0-9ed5-6db9dfc1e845)
 
-- A função anônima fará com que ao clicar nessas teclas em específico, a barra se movimente para cima ou para baixo, junto da função movimentarJogador1, que depois será chamada na função main.
-![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/e10464c7-2e83-4f79-a0fd-e0f315ec7ac2)
 
+_________________________________________________________________________________________________________________________________ 
+
+## Function moverBolinha():
+- Na function para movimentar a bola do jogo, fizemos algumas modificações no "else if", adicionando uma linha de código que estabelece um limite de altura para a bolinha com base na barra. Em outras palavras, se ultrapassar a altura ou ser igual a ela, a bolinha fará as ações abaixo.
+![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/82698f69-b923-423f-9f0b-f5664cd25c1a)
