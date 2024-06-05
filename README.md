@@ -46,7 +46,7 @@ ________________________________________________________________________________
 
 
 ## Function Anonymous (anônima):
- - A função anônima fará com que ao clicar nessas teclas em específico, a barra se movimente para cima ou para baixo, junto da função movimentarJogador1, que depois será chamada na função main.
+ - A função anônima fará com que ao clicar nessas teclas em específico, a barra se movimente para cima ou para baixo, junto da função movimentarJogador1, que depois será chamada na função main. É uma função sem nome que aparenta não conseguir ser utilizada como parâmetro em outras functions.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/e10464c7-2e83-4f79-a0fd-e0f315ec7ac2)
 
 
@@ -54,7 +54,7 @@ ________________________________________________________________________________
 
 
 ## Tecla de movimento:
-- Escolhendo tecla que movimentará a barra pelo console do navegador.
+- Escolhendo tecla que movimentará a barra pelo console do navegador. Vemos lá os valores numéricos de cada tecla para atribuir o valor dela ao código.
 ![image](https://github.com/Alex2024Campos/Atividade-Pongloco/assets/162368958/09c56282-f585-48c0-9ed5-6db9dfc1e845)
 
 
