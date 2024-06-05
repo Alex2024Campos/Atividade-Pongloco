@@ -55,7 +55,7 @@ function draw(){
 
 
 document.addEventListener('keydown', function (e){
-    if(e.keyCode === 83){
+    if(e.keyCode === 83){ //o 83 é o valor numérico da respectiva tecla, a qual foi visualizada pelo console.
         player1.dir = -8
     }
     else if(e.keyCode === 87){
@@ -64,7 +64,7 @@ document.addEventListener('keydown', function (e){
 })
 
 document.addEventListener('keyup', function (e){
-    if(e.keyCode === 83){
+    if(e.keyCode === 83){ //linha, pelo oque foi dito pelo Christiano, aparentemente foi feito no console e fica assim no código visualmente. Meu pai do céu.
         player1.dir = 0
     }
     else if(e.keyCode === 87){
@@ -84,12 +84,12 @@ function moverJogador1(){
 }
 
 function moverBolinha(){
-    bolinha.px += bolinha.dir //pegando o objeto bolinha para movimenta-lo 8px.
+    bolinha.px += bolinha.dir //pegando o objeto bolinha para movimenta-lo 8px. 
     if (bolinha.px > 1140){
         bolinha.dir *= -1 //Multiplicando para que ela vá ao contrário
     }
-    else if(bolinha.px < 90){
-        bolinha.dir *=-1
+    else if(bolinha.py + bolinha.ty >= player1.ty && bolinha.py <= player1.py + player1.ty && bolinha.px <= player1.px + player1.tx){ //se a posição da bola for maior ou igual que a do objeto lá (barrinha), fará os bgl *E*. 
+        bolinha.dir *=-1 //+ player1.tx
     }
 }
 
@@ -101,3 +101,6 @@ function main(){
 }
 
 setInterval(main, 10) //passar argumentos. Executará a função main em um determinado intervalo de tempo.
+
+
+// bolinha.ty = tamanho da bola.
