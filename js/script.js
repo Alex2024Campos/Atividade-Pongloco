@@ -4,7 +4,8 @@
 
 let canvasPong = document.getElementById('canvas')
 let quadro = canvasPong.getContext('2d') //Preparando o canvas para receber desenhos 2D, eba.
-
+const audio = new Audio('js/sa1.mp3')
+const audio1 = new Audio ('js/sa.mp3')
 
  quadro.fillStyle = '#8b8b8b' //Muda acor de todos os elementos que tiverem quadro. Adiciona cor ao fillrect, mudando assim, qual cor será preenchida pelos comandos feitos pelo programador
 
@@ -65,6 +66,7 @@ function telaVencedor(){
     quadro.fillText(`Jogador 1: ${pts1}`, 200,345)
     quadro.fillText(`Jogador 2: ${pts2}`, 800,345)
     quadro.fillStyle = 'black'
+
 }
 
 
@@ -165,9 +167,11 @@ function fimjogo(){
 function colisaoBolinha(){
     if (bolinha.py + bolinha.ty >= player2.py && bolinha.py <= player2.py + player2.ty && bolinha.px >= player2.px - player2.tx){
         bolinha.dir *= -1 //Multiplicando para que ela vá ao contrário
+        audio.play()
     }
     else if(bolinha.py + bolinha.ty >= player1.py && bolinha.py <= player1.py + player1.ty && bolinha.px <= player1.px + player1.tx){ //se a posição da bola for maior ou igual que a do objeto lá (barrinha), fará os bgl *E*. 
         bolinha.dir *=-1 //+ player1.tx
+        audio.play()
     }
 }
 
@@ -200,6 +204,7 @@ function main(){
     else{
         draw()
         telaVencedor()
+        audio1.play()
     }
 }
 // Aqui, utilizando-se da variável criando anteriormente, utilizamos da mesma para determinar se o jogo estará funcionadno (true) ou não (false) a depender da quantidade de pontos
